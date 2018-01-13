@@ -5,7 +5,7 @@ class ArticoloSerializers(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     ean = serializers.IntegerField(default=0)
     nome = serializers.CharField(max_length=64)
-    descrizione = serializers.CharField(max_length=512, blank=True, null=True)
+    descrizione = serializers.CharField(max_length=512)
     prezzo = serializers.FloatField(default=0)
 
 
